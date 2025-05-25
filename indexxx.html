@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Luar Angkasa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-screen">
+        <h1>Selamat Datang di Kuis Luar Angkasa!</h1>
+        <p>Tulis nama Anda untuk memulai:</p>
+        <input type="text" id="userName" placeholder="Nama Anda" autocomplete="off">
+        <button id="startButton">Masuk</button>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+        <h1 id="quiz-header">Selamat Mengerjakan, !</h1>
+        <form id="quiz-form">
+            <h3>1. Planet apa yang dikenal sebagai "Planet Merah"?</h3>
+            <label><input type="radio" name="q1" value="a"> Venus</label><br>
+            <label><input type="radio" name="q1" value="b"> Mars</label><br>
+            <label><input type="radio" name="q1" value="c"> Jupiter</label><br>
+
+            <h3>2. Galaksi tempat Tata Surya kita berada adalah...</h3>
+            <label><input type="radio" name="q2" value="a"> Andromeda</label><br>
+            <label><input type="radio" name="q2" value="b"> Triangulum</label><br>
+            <label><input type="radio" name="q2" value="c"> Bima Sakti (Milky Way)</label><br>
+
+            <h3>3. Apa nama lubang hitam supermasif di pusat galaksi Bima Sakti?</h3>
+            <label><input type="radio" name="q3" value="a"> Sagittarius A*</label><br>
+            <label><input type="radio" name="q3" value="b"> Cygnus X-1</label><br>
+            <label><input type="radio" name="q3" value="c"> M87*</label><br>
+
+            <h3>4. Bintang yang paling dekat dengan Bumi (setelah Matahari) adalah...</h3>
+            <label><input type="radio" name="q4" value="a"> Sirius</label><br>
+            <label><input type="radio" name="q4" value="b"> Proxima Centauri</label><br>
+            <label><input type="radio" name="q4" value="c"> Alpha Centauri A</label><br>
+
+            <h3>5. Planet terbesar di Tata Surya adalah...</h3>
+            <label><input type="radio" name="q5" value="a"> Saturnus</label><br>
+            <label><input type="radio" name="q5" value="b"> Jupiter</label><br>
+            <label><input type="radio" name="q5" value="c"> Uranus</label><br>
+            
+            <h3>6. Apa itu nebula?</h3>
+            <label><input type="radio" name="q6" value="a"> Kumpulan bintang</label><br>
+            <label><input type="radio" name="q6" value="b"> Awan antarbintang dari debu dan gas</label><br>
+            <label><input type="radio" name="q6" value="c"> Lubang hitam kecil</label><br>
+            
+            <h3>7. Berapa jumlah planet resmi di Tata Surya kita?</h3>
+            <label><input type="radio" name="q7" value="a"> 8</label><br>
+            <label><input type="radio" name="q7" value="b"> 9</label><br>
+            <label><input type="radio" name="q7" value="c"> 10</label><br>
+            
+            <h3>8. Satelit alami terbesar milik Jupiter adalah...</h3>
+            <label><input type="radio" name="q8" value="a"> Titan</label><br>
+            <label><input type="radio" name="q8" value="b"> Europa</label><br>
+            <label><input type="radio" name="q8" value="c"> Ganymede</label><br>
+            
+            <h3>9. Teori paling terkenal tentang asal-usul alam semesta adalah...</h3>
+            <label><input type="radio" name="q9" value="a"> Teori Keadaan Tetap</label><br>
+            <label><input type="radio" name="q9" value="b"> Teori Dentuman Besar (Big Bang)</label><br>
+            <label><input type="radio" name="q9" value="c"> Teori Osilasi</label><br>
+            
+            <h3>10. Fenomena di mana gravitasi sangat kuat sehingga cahaya pun tidak bisa lolos disebut...</h3>
+            <label><input type="radio" name="q10" value="a"> Supernova</label><br>
+            <label><input type="radio" name="q10" value="b"> Lubang Hitam (Black Hole)</label><br>
+            <label><input type="radio" name="q10" value="c"> Pulsar</label><br>
+            
+            <h3>11. Planet mana yang memiliki cincin paling terkenal?</h3>
+            <label><input type="radio" name="q11" value="a"> Jupiter</label><br>
+            <label><input type="radio" name="q11" value="b"> Saturnus</label><br>
+            <label><input type="radio" name="q11" value="c"> Neptunus</label><br>
+            
+            <h3>12. Apa nama sistem bintang yang terdiri dari dua bintang?</h3>
+            <label><input type="radio" name="q12" value="a"> Sistem Tunggal</label><br>
+            <label><input type="radio" name="q12" value="b"> Sistem Ganda (Binary System)</label><br>
+            <label><input type="radio" name="q12" value="c"> Sistem Multi-bintang</label><br>
+            
+            <h3>13. Galaksi terdekat dari Bima Sakti adalah...</h3>
+            <label><input type="radio" name="q13" value="a"> Galaksi Andromeda</label><br>
+            <label><input type="radio" name="q13" value="b"> Galaksi Triangulum</label><br>
+            <label><input type="radio" name="q13" value="c"> Awan Magellan Besar</label><br>
+            
+            <h3>14. Bintang yang menjadi pusat Tata Surya kita adalah...</h3>
+            <label><input type="radio" name="q14" value="a"> Bulan</label><br>
+            <label><input type="radio" name="q14" value="b"> Matahari</label><br>
+            <label><input type="radio" name="q14" value="c"> Proxima Centauri</label><br>
+            
+            <h3>15. Planet terpanas di Tata Surya adalah...</h3>
+            <label><input type="radio" name="q15" value="a"> Merkurius</label><br>
+            <label><input type="radio" name="q15" value="b"> Venus</label><br>
+            <label><input type="radio" name="q15" value="c"> Mars</label><br>
+            
+            <h3>16. Apa yang dimaksud dengan "tahun cahaya"?</h3>
+            <label><input type="radio" name="q16" value="a"> Waktu yang dibutuhkan cahaya untuk mengelilingi Matahari</label><br>
+            <label><input type="radio" name="q16" value="b"> Jarak yang ditempuh cahaya dalam satu tahun</label><br>
+            <label><input type="radio" name="q16" value="c"> Kecepatan cahaya</label><br>
+            
+            <h3>17. Planet mana yang dijuluki "Raksasa Es"?</h3>
+            <label><input type="radio" name="q17" value="a"> Jupiter dan Saturnus</label><br>
+            <label><input type="radio" name="q17" value="b"> Uranus dan Neptunus</label><br>
+            <label><input type="radio" name="q17" value="c"> Bumi dan Mars</label><br>
+            
+            <h3>18. Ledakan bintang yang sangat besar disebut...</h3>
+            <label><input type="radio" name="q18" value="a"> Nova</label><br>
+            <label><input type="radio" name="q18" value="b"> Supernova</label><br>
+            <label><input type="radio" name="q18" value="c"> Hypernova</label><br>
+            
+            <h3>19. Apa nama teleskop luar angkasa terkenal yang diluncurkan pada tahun 1990?</h3>
+            <label><input type="radio" name="q19" value="a"> Teleskop Luar Angkasa James Webb</label><br>
+            <label><input type="radio" name="q19" value="b"> Teleskop Luar Angkasa Hubble</label><br>
+            <label><input type="radio" name="q19" value="c"> Teleskop Spitzer</label><br>
+            
+            <h3>20. Sabuk asteroid utama terletak di antara orbit planet...</h3>
+            <label><input type="radio" name="q20" value="a"> Bumi dan Mars</label><br>
+            <label><input type="radio" name="q20" value="b"> Mars dan Jupiter</label><br>
+            <label><input type="radio" name="q20" value="c"> Jupiter dan Saturnus</label><br>
+
+            <button type="button" id="submitButton">Selesai & Lihat Nilai</button>
+        </form>
+        <div id="result" class="hidden"></div>
+    </div>
+    
+    <audio id="interstellar.mp3" src="interstellar.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
